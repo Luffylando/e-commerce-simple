@@ -1,1 +1,2 @@
-# e-commerce-simple-
+
+#Basic and simple e-commerce app
