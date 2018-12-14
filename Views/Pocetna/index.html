@@ -1,0 +1,52 @@
+{% extends '__layout/main.html' %}
+
+{% block main %}
+
+<br>
+<!-- Main page feature section -->
+<div class="container-fluid" id="featured-page">
+    <div class="col-md-12 mx-auto row">
+
+    <!-- This is left banner -->
+        <div class="col-md-2">
+            <!-- LEFT MARGIN-->
+        </div>
+
+        <!-- This is center column for Featured items -->
+        <div class="col-md-8 text-center">
+            <div class="text-center">
+                <h4>Featured Flowers</h4> <br>
+            </div>
+            <div class="row">
+
+                {% for flower in flowers %}
+
+                <div class="col-md-4" id="flower-card">
+                    <div class="mx-auto">
+                        <div id="flower-title">
+                            <h5>{{flower.flower_name}}</h5>
+                        </div>
+                    </div>
+                    <div id="flower-body" onclick="detailsmodal({{ flower.flowers_id }})">
+                        <img src="{{flower.flower_img}}" id="feature-img" alt="img">
+                        
+                    </div>
+                   <span style="color:red; text-decoration: line-through;">List price: {{flower.old_price}} &euro;</span> <br>
+                   <span style="color:rgb(3, 95, 3);">Actual price: {{flower.actual_price}} &euro;</span><br>
+                   <button type="button" data-toggle="modal" data-target="#exampleModalCenter"
+                   class="btn btn-sm btn-outline-secondary mx-auto" id="button-feature" onclick="detailsmodal({{ flower.flowers_id }})">Detaljnije</button>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- This is right banner-->
+        <div class="col-md-2">
+           <!-- RIGHT MARGIN-->
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

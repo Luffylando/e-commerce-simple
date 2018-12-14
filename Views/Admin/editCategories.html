@@ -1,0 +1,27 @@
+{% extends '__layout/main-admin.html' %}
+
+
+{% block main %}
+
+<h3 id="page-title">Edit Category</h3><br><br><br>
+<form action="{{BASE}}admin/categories/edit/{{category.category_id}}" method="POST">
+    <div class="col-md-8 mx-auto">
+        <div class="form-group row">
+            <label class="col-md-4">Category Name</label>
+            <input type="text" name="category_name" class="form-control col-md-5" value="{{category.category_name}}">
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4">Category Parent</label>
+            <input type="number" name="category_parent" class="form-control col-md-5" value="{{category.category_parent}}">
+        </div>
+
+        <div class="form-group col-md-9">
+            <button type="submit" class="btn btn-outline-secondary float-right" style="margin-left: 5px;">Edit</button>
+            <a href="{{BASE}}admin/categories"><button class="btn btn-outline-secondary float-right">Go back</button></a>
+
+        </div>
+    </div>
+</form>
+
+
+{% endblock %}
