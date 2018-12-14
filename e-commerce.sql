@@ -28,7 +28,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `cart_id` int(11) UNSIGNED NOT NULL,
+<<<<<<< HEAD
   `items` json NOT NULL,
+=======
+  `items` text NOT NULL,
+>>>>>>> ec3b81617c1fa3e1d2da7767bb7671fe29658804
   `expire_date` datetime NOT NULL,
   `paid` tinyint(4) NOT NULL DEFAULT '0',
   `shipped` tinyint(4) NOT NULL DEFAULT '0'

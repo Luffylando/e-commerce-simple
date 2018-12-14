@@ -7,9 +7,15 @@ class Configuration {
 
 
     const DB_HOST = 'localhost';
+<<<<<<< HEAD
     const DB_USER = 'root';
     const DB_PASS = '';
     const DB_NAME = 'e-commerce';
+=======
+    const DB_USER = '';
+    const DB_PASS = '';
+    const DB_NAME = '';
+>>>>>>> ec3b81617c1fa3e1d2da7767bb7671fe29658804
 
 
     const CART_COOKIE = 'oSAD12412as2foasjdOJIAOSUf4325';

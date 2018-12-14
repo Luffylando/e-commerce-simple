@@ -23,12 +23,19 @@
             $tax = 0.07;
             $items = json_decode($cart->items, true);
           
+<<<<<<< HEAD
             $count = 0;
             $subtotal = 0;
 
 
             if($items != []){
             foreach($items as $item){
+=======
+            
+            if($items != []){
+            foreach($items as $item){
+
+>>>>>>> ec3b81617c1fa3e1d2da7767bb7671fe29658804
               $count += $item['quantity'];
               $subtotal += $item['quantity'] * $item['price'];
 
@@ -177,8 +184,12 @@
 
             $tax = 0.07;
             $items = json_decode($cart->items, true);
+<<<<<<< HEAD
             $count = 0;
             $subtotal = 0;
+=======
+          
+>>>>>>> ec3b81617c1fa3e1d2da7767bb7671fe29658804
             
             if($items != []){
             foreach($items as $item){
@@ -221,7 +232,11 @@
 
                 "cart_id"		=> $cart_id,
                 "tax"			=> $tax,
+<<<<<<< HEAD
                 "sub_total"	 	=> $subtotal,
+=======
+                "sub_total"	 	=> $sub_total,
+>>>>>>> ec3b81617c1fa3e1d2da7767bb7671fe29658804
             
             );
             
