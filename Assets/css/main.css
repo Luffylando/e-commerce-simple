@@ -1,0 +1,392 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    
+        margin: 0 auto;
+
+
+}
+
+#img1 {
+
+    position: relative;
+	height: 700px;
+	background: linear-gradient( rgba(0, 0, 0, 0.3),
+	                             rgba(0, 0, 0, 0.3) ),
+                                   url('../img/background.jpg');
+    overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 100% 700px;
+	background-position: top center;
+	background-attachment: fixed;
+    
+}
+
+
+nav {
+
+    height: 70px;
+    background-color: rgb(78, 70, 70);
+    padding-top: 1.8%;
+    width:100%;
+
+}
+
+nav a {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    color:white;
+    margin-left: 20px;
+}
+
+nav a:hover{
+
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(165, 165, 90);
+    
+}
+
+#logo1 {
+
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: url('../img/logof.png');
+	background-repeat: no-repeat;
+	background-size: 30% 200px;
+	background-position: center center;
+	top: 35%;
+}
+
+#flower1{
+
+    position: absolute;
+	width: 100%;
+	height: 250px;
+	background: url('../img/f1.png');
+	background-repeat: no-repeat;
+	background-size: 15% 250px;
+	background-position: bottom left;
+    bottom: -25%;
+    filter:blur(1px);
+}
+
+#flower2 {
+
+    position: absolute;
+	width: 100%;
+	height: 250px;
+	background: url('../img/f2.png');
+	background-repeat: no-repeat;
+	background-size: 20% 250px;
+	background-position: bottom right;
+	bottom: -25%;
+}
+
+#foot-m {
+    height: 450px;
+    background-color: rgb(66, 63, 63);
+    color:white;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.footer-admin {
+
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color:white;
+    padding: 50px;
+    background-color: rgb(44, 44, 43);
+    width:100%;
+    font-size: 10pt;
+
+}
+
+
+
+#feature-img {
+
+    width: 240px;
+    height: 260px;
+    padding:5px;
+    border: 1px double gray;
+    border-radius: 80px;
+
+
+}
+
+
+#feature-img:hover {
+    border: 2px double rgb(107, 106, 106);
+}
+
+#logo-nav {
+
+    width: 150px;
+    height: 60px;
+    padding: 0px;
+    margin-top: -20px;
+
+}
+
+#img1-main2 {
+
+    position: relative;
+	height: 200px;
+	background: linear-gradient( rgba(0, 0, 0, 0.3),
+	                             rgba(0, 0, 0, 0.3) ),
+                                   url('../img/background.jpg');
+    overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 100% 200px;
+
+}
+
+#logo-main2 {
+
+
+    position: absolute;
+	width: 100%;
+	height: 200px;
+	background: url('../img/logof.png');
+	background-repeat: no-repeat;
+	background-size: 30% 200px;
+	background-position: center center;
+	top: 15%;
+}
+
+#page-title {
+
+    text-align: center;
+    margin-top: 120px;
+    font-size: 25pt;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#page-title-checkout {
+
+
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25pt;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#admin-dashboard {
+    padding: 60px;
+    font-size: 50pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#login-body { 
+
+    padding: 50px 70px 20px 70px;
+}
+
+label {
+
+    text-align: right;
+    padding-top: 1%;
+
+}
+
+main {
+
+    margin: 8%;
+}
+
+#category-body{
+
+    padding: 15px;
+}
+
+#edit-img {
+
+    width: 150px;
+    height: 200px;
+    margin-left: 50%;
+
+}
+
+#modal-body-feature {
+
+    height: 20em;
+  
+}
+
+#details-1 {
+
+    margin-top: 5%;
+}
+#flower_name {
+
+    font-size: 25pt;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#modal-img {
+
+    height: 300px;
+    width: 380px;
+    padding: 15px;
+}
+
+#modal-text{
+
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+
+#grand-total{
+    color:white;
+    background-color: rgb(113, 158, 119);
+    font-weight: 600;
+}
+#checkout_button {
+
+    margin-left: 59%;
+}
+
+
+address{
+
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 40px;
+}
+
+#flower-card {
+
+    padding-bottom: 40px;
+}
+
+.footer-head {
+
+    display: grid;
+    width: 650px;
+    grid-template-areas: "logo about services contact"
+                         "logo about services contact"
+                         "logo about services contact"
+                         "logo about services contact"
+                         "logo about services contact";
+    grid-auto-columns: 200px 150px 150px 150px;
+    grid-auto-rows: 30px;
+    font-size: 15pt;
+    padding-top: 100px;
+    
+}
+
+.main-c {
+
+    color:white;
+    font-size: 15pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+.main-c:hover {
+
+    text-decoration: underline;
+    text-decoration-color: rgb(177, 177, 105);
+    color:white;
+
+}
+
+
+.footer-head ul li {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.footer-head ul li a {
+    color:rgb(145, 143, 143);
+    font-size: 10pt;
+    letter-spacing: 1.5px;
+    
+}
+
+.footer-head ul li a:hover{
+    color:white;
+    text-decoration: none;
+
+}
+
+.f-logo {grid-area: logo;}
+.f-about {grid-area: about;}
+.f-services {grid-area: services;}
+.f-contact {grid-area: contact;}
+
+
+.footer-bottom{
+
+    text-align: center;
+    height: 20px;
+    padding-top: 50px;
+
+}
+
+#hr-footer{
+    background: rgb(199, 198, 198);
+    width:650px;
+   
+
+}
+
+.f-row {
+
+    font-size: 10pt;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(117, 115, 115);
+}
+
+#f-logo {
+
+    width: 150px;
+    margin-top: -20px;
+}
+
+#mail {
+
+    height: 700px;
+    width: 550px;
+    padding-top: 50px;
+
+}
+
+.social-icons {
+
+    padding-top: 50px;
+}
+#soc-icons {
+
+    width: 35px;
+    height: 35px;
+    margin-left: 50px;
+}
+
+#receipt-title {
+
+    margin-top: 50px;
+    font-size: 27pt;
+    text-align: center;
+}

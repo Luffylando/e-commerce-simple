@@ -1,0 +1,32 @@
+{% extends '__layout/main2.html' %}
+
+
+{% block main %}
+
+<div id="receipt-title" style="color:rgb(5, 97, 5);">You Purchased Item Successfully!</div><br>
+
+<div class="card col-md-6 mx-auto">
+    <p id="receipt-title">Receipt</p> 
+<address>
+    Name: {{fullname}}            <br>
+    Email: {{email}}              <br>
+    Country:{{country}}           <br>
+    City: {{city}}                <br>
+    Street Address: {{street}}    <br>
+    Zip Code: {{zip}}        <br><br><br>
+    
+    The item\items have been shipped to address above.
+    <br><br>
+
+
+
+    Regards, <br>
+    E-commerce stuff
+    <div class="float-right"><a href="{{BASE}}">Jump on starting page</a></div>
+
+</address>
+
+   
+</div>
+
+{% endblock %}

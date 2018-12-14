@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>e-Commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="{{BASE}}Assets/css/bootstrap.css">
+        <link rel="stylesheet" href="{{BASE}}Assets/css/main.css">
+        <script src="{{BASE}}Assets/js/jquery.js"></script>
+        <script src="{{BASE}}Assets/js/bootstrap.js"></script>
+       
+    </head>
+    <body>
+     
+        <nav class=" navbar-nav fixed-top">
+            <div class="container">
+                
+                <div class="float-left">
+                    <a href="{{BASE}}"><img src="{{BASE}}Assets/img/logof.png" id="logo-nav" alt="logo"></a>
+
+                </div>
+
+                   
+                    <a href="{{BASE}}about">About</a>
+                    <a data-toggle="modal" href="" data-target="#exampleModal"
+                    onclick="mail();">Contact</a>
+   
+
+
+
+                    <a class="float-right" href="{{BASE}}cart">Cart</a>
+                
+
+
+             </div>            
+        </nav>
+
+        <div id="img1-main2">
+                <div id="logo-main2"></div>
+            
+
+
+            </div>
+
+       
+
+        {% block main %}
+            <main>
+            </main>
+        {% endblock %}
+
+        <footer id="foot-m">
+                <div class="footer-head mx-auto">
+                    <div class="f-logo">
+                        <a href="#"><img src="{{BASE}}/Assets/img/logof.png" id="f-logo" alt=""></a>
+                      
+                    </div>
+                    <div class="f-about">
+                        <ul>
+                            <a class="main-c" href="">About</a>
+                            <li><a href="">About2</a></li>
+                            <li><a href="">About3</a></li>
+                            <li><a href="">About4</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="f-services">
+                            <ul>
+                                    <a class="main-c" href="">Services</a>
+                                    <li><a href="">services</a></li>
+                                    <li><a href="">services</a></li>
+                                    <li><a href="">services</a></li>
+        
+                                </ul>
+                    </div>
+                    <div class="f-contact">
+                            <ul>
+                                    <a class="main-c" href="">Contact</a>
+                                    <li><a href="">contact</a></li>
+                                    <li><a href="">contact</a></li>
+                                    <li><a href="">contact</a></li>
+        
+                                </ul>
+                    </div>
+                </div>
+               <div class="social-icons text-center">
+                   <img src="{{BASE}}Assets/img/icons/si-1.png" id="soc-icons" alt="">
+                   <img src="{{BASE}}Assets/img/icons/si-2.png" id="soc-icons" alt="">
+                   <img src="{{BASE}}Assets/img/icons/si-3.png" id="soc-icons" alt="">
+                   <img src="{{BASE}}Assets/img/icons/si-4.png" id="soc-icons" alt="">
+                   <img src="{{BASE}}Assets/img/icons/si-5.png" id="soc-icons" alt="">
+
+               </div>
+                <hr id="hr-footer" class="mx-auto">
+                <div class="footer-bottom">
+
+                    <small>Copyright &copy; - 2018</small>
+
+                </div>
+
+        </footer>
+        <script>
+        
+        function mail(){
+            var mail = {"email": "testemail@gmail.com"};
+           
+            $.ajax({
+                url: "{{BASE}}mail",
+                method: "post",
+                data : mail,
+                success: function(mail){
+                jQuery('body').append(mail);
+                jQuery('#mail').modal('toggle');
+                },
+                error: function(){
+                alert("Something went wrong!");
+                }
+            });
+        }
+        
+        </script>
+    </body>
+</html>

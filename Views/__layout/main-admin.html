@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>e-Commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="{{BASE}}Assets/css/bootstrap.css">
+        <link rel="stylesheet" href="{{BASE}}Assets/css/main.css">
+        <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+        <script src="{{BASE}}Assets/js/jquery.js"></script>
+        <script src="{{BASE}}Assets/js/bootstrap.js"></script>
+       
+    </head>
+    <body>
+     
+        <nav class="navbar-nav fixed-top">
+            <div class="container">
+                
+                <div class="float-left">
+                    <a href="{{BASE}}"><img src="{{BASE}}Assets/img/logof.png" id="logo-nav" alt="logo"></a>
+
+                </div>
+
+                    
+                    <a href="{{BASE}}admin/categories">Categories</a>
+                    <a href="{{BASE}}admin/employees">Employees</a>
+                    <a href="{{BASE}}admin/products">Products</a>
+                    <a href="{{BASE}}admin/cart">Cart</a>
+
+
+                {% if employee.employee_id != '' %}
+
+                 <a class="float-right" href="{{BASE}}logout">Logout</a>
+                 <p class="float-right" style="color:white; font-family: 'Times New Roman', Times, serif; font-size: 13pt; margin-left:20px;">Hello {{employee.username}}</p>
+
+         
+                {% else %}
+                    <a class="float-right" href="">Login</a>
+                    <a class="float-right" href="">Register</a>
+                {% endif %}
+                
+
+
+             </div>            
+        </nav>
+        {% block main %}
+        <main>
+        </main>
+        {% endblock %}
+
+        <br>
+     
+    </body>
+</html>

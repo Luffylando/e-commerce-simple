@@ -1,0 +1,44 @@
+{% extends '__layout/main-admin.html' %}
+
+{% block main %}
+
+<p id="page-title">Cart(paid and to be shipped)</p><br>
+
+<div class="col-md-10 mx-auto">
+<table class="table table-striped table-bordered">
+    <thead>
+
+        <th>#</th>
+        <th>Transaction id</th>
+        <th>Fullname</th>
+        <th>Email</th>
+        <th>Items</th>
+        <th>Grand total</th>
+        <th>Paid</th>
+        <th>Ship</th>
+
+    </thead>
+    <tbody>
+
+             {% for cart in carts %}
+        <tr>
+            <td></td>
+            <td>{{cart.transaction_id}}</td>
+            <td>{{cart.fullname}}</td>
+            <td>{{cart.email}}</td>
+            <td>{{cart.items}}{% if cart.items != 1 %}  items {% else %} item {% endif %}</td>
+            <td>{{cart.grand_total}}&euro;</td>
+            <td>{% if cart.paid == 1 %} YES {% else %} NO {% endif %} <strong>({{cart.transaction_date | date("d.m.Y H:i:s")}})</strong></td>
+            <form action="{{BASE}}admin/cart-ship/{{cart.cart_id}}" method="post">
+            <td><button type="submit" class="btn btn-sm btn-success">Ship</button></td>
+
+            </form>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+
+</table>
+</div>
+
+{% endblock %}
