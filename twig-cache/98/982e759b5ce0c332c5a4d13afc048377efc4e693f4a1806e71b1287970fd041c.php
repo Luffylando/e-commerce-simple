@@ -167,7 +167,7 @@ class __TwigTemplate_354f8d30533b37dcc65155018299ccdf2825787484cb981a5d9942e7fca
         <script>
         
         function mail(){
-            var mail = {\"email\": \"antonije25.01.1994@gmail.com\"};
+            var mail = {\"email\": \"testemail@gmail.com\"};
            
             \$.ajax({
                 url: \"";

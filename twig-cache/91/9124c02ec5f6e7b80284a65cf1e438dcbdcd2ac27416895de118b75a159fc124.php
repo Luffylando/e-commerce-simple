@@ -62,7 +62,7 @@ class __TwigTemplate_190df2ddb2b6d659ab94c489d33aa465b5f18bf0da4143288e6b2e52045
             </div>
           
           <div class=\"form-group\">
-            <label for=\"poruka\" class=\"col-form-label\">Poruka</label>
+            <label for=\"poruka\" class=\"col-form-label\">Message</label>
             <textarea class=\"form-control\" name=\"poruka\" id=\"poruka\">Message body</textarea>
           </div>
        
