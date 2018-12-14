@@ -9,6 +9,7 @@
 4.    Default administrator credentials:
 
          email: itachi@gmail.com
+         
          password: sifra123
     
     
